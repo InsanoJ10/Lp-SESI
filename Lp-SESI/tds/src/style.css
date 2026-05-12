@@ -1,0 +1,55 @@
+:root{
+    --text: #ffff;
+    --bg: #000;
+    --blood: #640d14;
+    --red: red;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Kings", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text);
+    background-color: #000;
+    
+}
+section{
+    min-height: 100vh;
+    height: auto;
+}
+nav{
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    height: 100px;
+    z-index: 999;
+    animation: decima 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    
+}
+nav.sc{
+    background-color: #640d14;
+}
+@keyframes decima {
+    0%{
+        transform: translateY(-100px);
+    }
+    
+}
+
